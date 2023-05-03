@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open_Agro</title>
+
+    <!-- Грузим стили -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+</head>
+
+<body>
+    <div class="header">
+        <!-- Кнопки -->
+        <div class="grayContainer">
+            <button class="homeBtn button48x48">🏠 Дом</button>
+            <button class="geoBtn button48x48" id="geoBtn">🧭Где я?</button>
+            <!-- <button class="testMarkersBtn button48x48">Тест</button>  -->
+            <!-- <input type="checkbox" class="geoCheckbox" id="geoCheckbox">🧭Отслеживать</input> -->
+            <button data-fullscreen class="button48x48">⛶</button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="map" class="map brd"></div>
+    </div>
+
+    <!-- Грузим скрипты -->
+    <script src="leaflet/leaflet.js"></script>
+    <script src="index.js"></script>
+    
+    <script src="local_DB.js"></script>
+
+
+    <!-- Данные пользователя -->
+    <script src="data/field.js"></script>
+
+    <!-- Слои карты -->
+    <script src="layers.js"></script>
+
+
+    <script src="navigation.js"></script>
+    <script src="geoPosition.js"></script>
+</body>
+
+</html>
